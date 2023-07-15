@@ -6,6 +6,70 @@
 }
 
 body {
-    background-color: slategray;
+    background-color: silver;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    background-color: slategray;
+    color: black;
+    min-width: 400px;
+    min-height: 450px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    /* empieza en la línea 1 y termina en la línea -1 (última línea) de los números de línea en el grid */
+    border-radius: .5rem;
+    background-color: silver;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: monospace;
+    text-align: right;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.button {
+    border-radius: .5rem;
+    background-color: silver;
+    border: 0.1rem;
+    padding: 0.75rem;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: slategray;
+}
+
+#cero {
+    /* por número de filas de grid:
+    grid-column: 1 / 3;  */
+    grid-column: span 2;
+    /* dos filas de largo */
+}
+
+#igual {
+    grid-row: span 2;
+    /* ocupa dos filas de alto */
+    background-color: cadetblue;
+}
+
+#igual:hover {
+    background-color: rgba(95, 158, 160, 0.645);
 }
