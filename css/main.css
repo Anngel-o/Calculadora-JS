@@ -31,7 +31,7 @@ body {
     /* empieza en la línea 1 y termina en la línea -1 (última línea) de los números de línea en el grid */
     border-radius: .5rem;
     background-color: silver;
-    padding: 1.5rem;
+    padding: 0.25rem;
     font-size: 2.5rem;
     font-weight: 500;
     font-family: monospace;
